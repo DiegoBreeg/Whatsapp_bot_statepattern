@@ -8,7 +8,6 @@ function Form() {
             this.storage[user.from] = {state: 1, data: []}
             return `Informe seu nome`
         }
-
         if(this.storage[user.from].state == 1){
             this.storage[user.from].data.push(user.body)
             this.storage[user.from].state = 2
@@ -17,7 +16,10 @@ function Form() {
         if(this.storage[user.from].state == 2){
             this.storage[user.from].data.push(user.body)
             this.storage[user.from].state = 3
-            return `Informe seu RG`
+            return `Informe o serviço desejado.
+            opções:
+            pediatria, neurologia, cardiologia
+            `
         }
         if(this.storage[user.from].state == 3){
             this.storage[user.from].data.push(user.body)
@@ -26,7 +28,7 @@ function Form() {
             delete this.storage[user.from]
             user_state.set(user, '!inicial')
             return `Cadastro realizado com sucesso`
-        }        
+        }
     }    
 }
 const form = new Form()

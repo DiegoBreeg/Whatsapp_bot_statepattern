@@ -29,12 +29,11 @@ function Message_handler() {
     this.getResponse = (user) => {
         if (user_state.get(user) === '!menu') {
             if (!(user.body in message_handler.options)) {
-                user_state.set(user, '!menu')
+                user_state.set(user, '!inicial')
                 return 'Código inexistente, tente novamente'
             }
             user_state.set(user, user.body)
         }
-
         return this.options[user_state.get(user)](user)
     }
 }
