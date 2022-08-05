@@ -3,9 +3,7 @@ const { Client, LocalAuth } = require('whatsapp-web.js');
 const message_handler = require('./src/bot/message_handler')
 const User = require('./src/bot//user')
 const user_state = require('./src/bot/user_state')
-const form = require('./src/bot/form')
-
-    const rodrigo = '553399271275@c.us'
+const form = require('./src/bot/form')    
     
     const client = new Client({
         authStrategy: new LocalAuth()
