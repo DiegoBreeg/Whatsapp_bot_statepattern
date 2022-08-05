@@ -1,0 +1,25 @@
+{
+  "name": "whatsapp_bot",
+  "version": "1.0.0",
+  "description": "atendente virtual para whatsapp",
+  "main": "src/index.js",
+  "scripts": {
+    "dev": "node src/bot/test.js",
+    "start": "node src/index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/DiegoBreeg/Whatsapp_bot.git"
+  },
+  "author": "d.breeg",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/DiegoBreeg/Whatsapp_bot/issues"
+  },
+  "homepage": "https://github.com/DiegoBreeg/Whatsapp_bot#readme",
+  "dependencies": {
+    "qrcode-terminal": "^0.12.0",
+    "whatsapp-web.js": "^1.17.1"
+  }
+}
